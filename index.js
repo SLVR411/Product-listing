@@ -6,9 +6,11 @@ document.addEventListener('DOMContentLoaded', function(){
         event.preventDefault()
         const outputDiv = document.querySelector('#console'); // Select the output div
         outputDiv.textContent = '';
-        let name = document.querySelector('#fname').value
-        
-        let year = document.querySelector('#dbirth').value
+        const nameInput = document.querySelector('#fname'); // Select the name input element
+        const yearInput = document.querySelector('#dbirth'); // Select the date input element
+
+        const name = nameInput.value; // Get the value of the name input
+        const year = yearInput.value; // Get the value of the date input
         
         
         let dob = year.split("-")[0];
