@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Marketplace</title>
+    <link rel="stylesheet" href="market.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jdm Marketplace</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="privacy-banner" class="banner">
+            <p><strong>Privacy Notice:</strong> We value your data. In compliance with Kenya's <strong>Data Protection
+                    Act (2019)</strong>, we only collect what is necessary. <a href="https://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/2019/TheDataProtectionAct__No24of2019.pdf" target="_blank">Read more.</a></p>
+        </section>
+
+
+        <section id="register">
+            <h2>Join Our Marketplace</h2>
+            <form id="regForm">
+                <input type="text" id="username" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <div class="consent">
+                    <input type="checkbox" id="consent" required>
+                    
+                    <label for="consent">I agree to the processing of my data per the ODPC guidelines.</label><br>
+            <button onclick="acceptCookies()">Accept</button>
+
+                </div>
+                <button type="submit" >Create Account</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="market.js"></script>
+</body>
+
+</html>
